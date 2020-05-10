@@ -1,0 +1,18 @@
+package com.sai.io;
+
+import java.io.Console;
+
+public class Example13 {
+    public static void main(String[] args) {
+        Console c=System.console();
+
+        System.out.println("Enter password: ");
+        char[] ch=c.readPassword();
+        String pass=String.valueOf(ch);//converting char array into string
+        System.out.println("Password is: "+pass);
+
+        System.out.println("Enter your name: ");
+        String n=c.readLine();
+        System.out.println("Welcome "+n);
+    }
+}
